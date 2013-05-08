@@ -13,6 +13,10 @@ function sorting(bubbleSortArray){
 		return false;
 	}
 	// Array contains items: Go ahead and sort
+
+	//for each item in the array find out how many items it is bigger than
+	// This will be its position in the sorted array
+	//bigger than 4 == position 4
 	if(verifyArray){
 		for(var i=0; i<bubbleSortArray.length; i++){
 			sortedList[place(bubbleSortArray[i],bubbleSortArray)] = bubbleSortArray[i];
