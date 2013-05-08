@@ -1,13 +1,13 @@
 
-var unsortedArray = [20,3000,0,90,34,1,3];
-var sortedList = []
+var bubbleSortArray = [20,3000,0,90,34,1,3];
+var sortedList = [];
 var comparator;
 
-function sorting(unsortedArray){
-	verifyArray(unsortedArray);
+function sorting(bubbleSortArray){
+	verifyArray(bubbleSortArray);
 	// Verify the array even contains anything
-	function verifyArray(unsortedArray){
-		if(unsortedArray.length === 0 || unsortedArray.length === 1){
+	function verifyArray(bubbleSortArray){
+		if(bubbleSortArray.length === 0 || bubbleSortArray.length === 1){
 			console.log("Your array contains 0 or only 1 item");
 		}
 		return false;
@@ -18,8 +18,8 @@ function sorting(unsortedArray){
 	// This will be its position in the sorted array
 	//bigger than 4 == position 4
 	if(verifyArray){
-		for(var i=0; i<unsortedArray.length; i++){
-			sortedList[place(unsortedArray[i],unsortedArray)] = unsortedArray[i];
+		for(var i=0; i<bubbleSortArray.length; i++){
+			sortedList[place(bubbleSortArray[i],bubbleSortArray)] = bubbleSortArray[i];
 		}
 	}
 	function place(comparator, array){
@@ -27,12 +27,12 @@ function sorting(unsortedArray){
 		var iamBiggerThan=0;
 		for(var j=0; j<array.length;j++){
 			if(comparator<array[j]){
-							console.log("comparator "+comparator+" is smaller "+ array[j]);
-							iAmSmallerThan++;
+				console.log("comparator "+comparator+" is smaller "+ array[j]);
+				iAmSmallerThan++;
 			}
 			else if(comparator>array[j]){
-							console.log("comparator "+comparator+" is bigger "+ array[j]);
-							iamBiggerThan++
+				console.log("comparator "+comparator+" is bigger "+ array[j]);
+				iamBiggerThan++;
 			}
 		}
 		return iamBiggerThan;
@@ -40,4 +40,4 @@ function sorting(unsortedArray){
 	console.log(sortedList);
 }
 
-sorting(unsortedArray);	
+sorting(bubbleSortArray);
