@@ -1,13 +1,13 @@
 
-var bubbleSortArray = [20,3000,0,90,34,1,3];
+var unsortedArray = [20,3000,0,90,34,1,3];
 var sortedList = []
 var comparator;
 
-function sorting(bubbleSortArray){
-	verifyArray(bubbleSortArray);
+function sorting(unsortedArray){
+	verifyArray(unsortedArray);
 	// Verify the array even contains anything
-	function verifyArray(bubbleSortArray){
-		if(bubbleSortArray.length === 0 || bubbleSortArray.length === 1){
+	function verifyArray(unsortedArray){
+		if(unsortedArray.length === 0 || unsortedArray.length === 1){
 			console.log("Your array contains 0 or only 1 item");
 		}
 		return false;
@@ -18,8 +18,8 @@ function sorting(bubbleSortArray){
 	// This will be its position in the sorted array
 	//bigger than 4 == position 4
 	if(verifyArray){
-		for(var i=0; i<bubbleSortArray.length; i++){
-			sortedList[place(bubbleSortArray[i],bubbleSortArray)] = bubbleSortArray[i];
+		for(var i=0; i<unsortedArray.length; i++){
+			sortedList[place(unsortedArray[i],unsortedArray)] = unsortedArray[i];
 		}
 	}
 	function place(comparator, array){
@@ -40,4 +40,4 @@ function sorting(bubbleSortArray){
 	console.log(sortedList);
 }
 
-sorting(bubbleSortArray);	
+sorting(unsortedArray);	
