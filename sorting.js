@@ -12,11 +12,7 @@ function sorting(unsortedArray){
 	function place(comparator, array){
 		var iamBiggerThan=0;
 		for(var j=0; j<array.length;j++){
-			if(comparator<array[j]){
-				console.log("comparator "+comparator+" is smaller "+ array[j]);
-			}
-			else if(comparator>array[j]){
-				console.log("comparator "+comparator+" is bigger "+ array[j]);
+			if(comparator>array[j]){
 				iamBiggerThan++;
 			}
 		}
