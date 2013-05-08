@@ -23,7 +23,6 @@ function sorting(bubbleSortArray){
 		}
 	}
 	function place(comparator, array){
-		console.log("i ge here");
 		var iAmSmallerThan=0;
 		var iamBiggerThan=0;
 		for(var j=0; j<array.length;j++){
