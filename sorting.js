@@ -24,19 +24,19 @@ function sorting(bubbleSortArray){
 	}
 	function place(comparator, array){
 		console.log("i ge here");
-		var iamsmallerthan=0;
-		var iambiggerthan=0;
+		var iAmSmallerThan=0;
+		var iamBiggerThan=0;
 		for(var j=0; j<array.length;j++){
 			if(comparator<array[j]){
 							console.log("comparator "+comparator+" is smaller "+ array[j]);
-							iamsmallerthan++;
+							iAmSmallerThan++;
 			}
 			else if(comparator>array[j]){
 							console.log("comparator "+comparator+" is bigger "+ array[j]);
-							iambiggerthan++
+							iamBiggerThan++
 			}
 		}
-		return iambiggerthan;
+		return iamBiggerThan;
 	}
 	console.log(sortedList);
 }
