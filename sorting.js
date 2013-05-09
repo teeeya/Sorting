@@ -19,6 +19,11 @@ function sorting(unsortedArray){
 				console.log("comparator "+comparator+" is bigger "+ array[j]);
 				iamBiggerThan++;
 			}
+
+			else if(comparator == array[j]){
+				console.log("comparator "+comparator+" is bigger "+ array[j]);
+				iamBiggerThan++;
+			}
 		}
 		return iamBiggerThan;
 	}
